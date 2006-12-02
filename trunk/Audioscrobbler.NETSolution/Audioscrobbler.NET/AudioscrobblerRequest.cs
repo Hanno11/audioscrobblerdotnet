@@ -450,7 +450,7 @@ namespace Audioscrobbler.NET
             // {6} - date in YYYY-MM-DD mm:hh:ss format
             string urlTrack = "&a[{0}]={1}&t[{0}]={2}&b[{0}]={3}&m[{0}]={4}&l[{0}]={5}&i[{0}]={6}";
 
-            return String.Format(urlTrack, i, HttpUtility.UrlEncode(track.ArtistName), HttpUtility.UrlEncode(track.TrackName), HttpUtility.UrlEncode(track.AlbumName), HttpUtility.UrlEncode(track.MusicBrainzID), track.TrackLength, HttpUtility.UrlEncode(DateTime.Now.ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss")));
+            return String.Format(urlTrack, i, HttpUtility.UrlEncode(track.ArtistName), HttpUtility.UrlEncode(track.TrackName), HttpUtility.UrlEncode(track.AlbumName), HttpUtility.UrlEncode(track.MusicBrainzID), track.TrackLength, HttpUtility.UrlEncode(track.TrackPlayed.ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss")));
         }
     }
 }

@@ -36,5 +36,6 @@ namespace Audioscrobbler.NET
         string AlbumName { get; set; }
         string MusicBrainzID { get; set; }
         int TrackLength { get; set; }
+        DateTime TrackPlayed { get; set; }
     }
 }
