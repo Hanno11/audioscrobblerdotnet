@@ -38,6 +38,7 @@
     <Compile Include="AudioscrobblerRequest.cs" />
     <Compile Include="AudioscrobblerResponse.cs" />
     <Compile Include="AudioscrobblerResponseType.cs" />
+    <Compile Include="AudioscrobblerTrack.cs" />
     <Compile Include="IAudioscrobblerTrack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
