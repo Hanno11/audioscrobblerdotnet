@@ -88,12 +88,15 @@ namespace Audioscrobbler.NET
             AudioscrobblerResponse aResponse = null;
 
             // create the request
-            WebRequest request = WebRequest.Create(url);
+            HttpWebRequest request = (HttpWebRequest) WebRequest.Create(url);
 
             // set the method to POST
             request.Method = "POST";
+            request.ContentLength = 0;
 
             // grab the response
+            // TODO: Change response type to HttpWebResponse
+            // TODO: Better error handling
             using (WebResponse response = request.GetResponse())
             {
                 using (Stream dataStream = response.GetResponseStream())
