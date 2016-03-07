@@ -1,0 +1,1 @@
+This library allows you to send track or tracks information to the Audioscrobbler / Last.FM API.  Its written in C#.
