@@ -403,7 +403,7 @@ namespace Audioscrobbler.NET
             if (tracks.Count == 0)
                 return;
 
-            // verify that a successful handshake has occured
+            // verify that a successful handshake has occurred
             if (handshakeSuccessful == false)
                 this.Handshake();
 
